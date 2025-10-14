@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IICS</title>
+
+</head>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+    font-family: Arial, sans-serif;
+}
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f3f6fb;
+}
+header{
+  /* position: fixed; */
+  top: 0%;
+  width: 100%;
+  background-color: white;
+  height: 100px; 
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  margin-right: 30px;
+
+    /* background: #17468f; */
+    /* padding: 10px 16px; */
+    color: black;
+    position: relative;
+
+}
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.logo{
+margin-left: 10px;
+margin-bottom: 10px;
+}
+.menu-toggle {
+    background: none;
+    color: black;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+}
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar-links li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 14px;
+font-size: 25px;
+
+    display: block;
+}
+.navbar-links a:hover{
+
+  color: blue;
+}
+
+.navbar-links li a:hover {
+    /* background: #153a6c; */
+    border-radius: 4px;
+}
+
+.comp{
+  width: 95%;
+    height: 1200px;
+    /* object-fit: cover; */
+    /* border-radius: 10px; */
+    /* margin-top: -1rem; */
+    margin-left: 0%;
+}
+}
+.image-container{
+    position: relative;
+    display: inline;
+    height: 900px;
+
+  }
+  .image-container img{
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  .overplay{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    color: yellowgreen;
+    transform: translate(-160%, 10%);
+    padding: 10px;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+    
+  }
+  .pera{
+position: absolute;
+    top: 30%;
+    left: 40%;
+    color: yellowgreen;
+    transform: translate(-108%, 140%);
+    color: white;
+    text-align: left;
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .btn{
+    position: relative;
+    top: 270%;
+    left: 90%;
+    color:white;
+    transform: translate(-250%,620%);
+
+    padding: 15px;
+    text-align:justify;
+    width: 160px;
+    display: block;
+    background-color: rgb(35, 35, 117);
+    border-radius: 10px;
+    font-size: 1rem;
+
+  }
+  .btn2{
+    position: relative;
+    top: 170%;
+    left: 90%;
+    color:black;
+    width: 160px;
+    font-size: 1rem;
+    transform: translate(-138%, 500%);
+
+    padding: 15px;
+    color: white;
+    background-color: gray;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+  }
+
+ .courses {
+    background: #f3f6fb;
+    padding: 16px;
+} 
+
+.courses h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #17468f;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 32px;
+}
+
+.course-block {
+    min-height: 80px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px #e0e0e0;
+} 
+
+.branches-section {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.branches-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: -15px;
+    font-weight: bold;
+    list-style: none;
+    margin-top: 1em;
+}
+
+.branches-list li {
+    padding: .6em;
+    border-radius: 5px;
+    font-size:xx-large
+}
+
+
+
+
+.quote-box {
+  position: relative;
+  background: #151c24; 
+  color: #fff;
+  padding: 40px 30px;
+  max-width: 100%;
+  height: 750px;
+  
+  font-family: 'Segoe UI', Arial, sans-serif;
+  box-shadow: 0 5px 24px rgba(0,0,0,0.06);
+}
+
+.quote-box h2 {
+  /* font-size: 1.1rem; */
+  line-height: 1.5;
+  font-size :50px;
+  text-align: start;
+  margin-left: 200px;
+  margin-top: 60px;
+  line-height: 70px;
+
+}
+
+.quote-box::before {
+  content: "“ ";
+  position: absolute;
+  top: -40px;
+  left: 90px;
+  color: grey;
+
+  font-size: 15rem;
+  opacity: 8.25;
+  font-family: serif;
+  z-index: 1;
+}
+
+.quote-box::after {
+  content: "”";
+  position: absolute;
+  bottom: -80px;
+  right: 200px;
+  font-size: 15rem;
+  color: grey;
+  opacity: 8.25;
+  font-family: serif;
+  z-index: 1;
+}
+.flex {
+      display: flex;
+      justify-content: space-between;
+    }
+    .achievement{
+      box-shadow: var(--shadow);
+      flex: 1 1 280px;
+      width: 100%;
+    }
+    .achievement img {
+      width: 90%;
+      border-radius: var(--radius);
+    border-radius: 15px;
+    margin-left: 20px;
+    }
+ 
+
+   .Seminar{
+    transform: translate(-240%, -100%);
+position: absolute;
+
+   }
+   
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 1rem;
+      justify-content: space-between;
+     font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+.testimonials-section {
+  background-color: rgb(226, 234, 243);
+  padding: 40px 0;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,1.08);
+  max-width: 320px;
+  width: 100%;
+  padding: 24px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: box-shadow 0.2s;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,5.14);
+  zoom: 1;
+  
+}
+
+.testimonial-img {
+  width: 48px;
+  height: 48px;
+  background: url('https://randomuser.me/api/portraits/women/1.jpg') center/cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.testimonial-img1 {
+  width: 48px;
+  height: 48px;
+  background: url('softwre.jpg') center/cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.testimonial-img2 {
+  width: 48px;
+  height: 48px;
+  background: url('img.jpg') center/cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.testimonial-content h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.1em;
+  color: black;
+  font-weight: 700;
+}
+
+.testimonial-content p {
+  margin: 0;
+  font-size: 0.96em;
+
+  color: black;
+  line-height: 1.5;
+  text-align: left;
+}
+
+
+   .contact-section {
+  padding: 40px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: -10px;
+  margin: 20px 0;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+textarea {
+  padding: 15px;
+  width: 450px;
+  margin-left: 30px;
+  border: 1px solid blue;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+  width: 400px;
+  height: 200px;
+}
+
+button {
+padding: 10px 20px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+  background: linear-gradient(to right, #061166d6, #150c3c, #060123);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  height: 250px;
+  justify-content: space-around;
+  padding: 30px 10px;
+}
+
+.footer-col {
+  width: 200px;
+
+  margin: 30px;
+}
+.footer-col h4 {
+  margin-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+.footer-col img {
+  margin-bottom: 30px;
+
+  border-radius: 10px;
+  gap: 30px;
+}
+.copy{
+    text-align: center;
+    background-color: rgb(3, 1, 14);
+    color: white;
+    padding-top: 10px;
+    height: 40px;
+}
+
+.cointainer{
+  display: flex;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+.my-image{
+  float: left;
+  margin-left: 60px;
+  border-radius: 20px;
+  margin-top: 60px;
+  height: 500px;
+  
+}
+
+.text-box{
+  background-color:white;
+  padding:50px;
+  margin-top: 160px;
+box-shadow: 0 10px 20px rgba(5, 5, 5, 5.5);
+width: 100px;
+  border:1px solid #ccc;
+margin-left: -100px;
+margin-right: 150px;
+margin-bottom: 60px;
+  font-size: 20px;
+  line-height: 25px;
+border-radius: 20px;
+  flex-grow:1;
+
+}
+
+.courses {
+    text-align: center;
+    padding: 38px 10px 10px 10px;
+    background: #fff;
+}
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3,  1fr);
+    gap: 22px;
+    justify-content: center;
+}
+
+.course-card {
+    background: #f6f6fe;
+    border-radius: 14px;
+    box-shadow: 0 1px 7px rgba(29, 43, 83, 0.1), 0 0.5px 2px rgba(21, 84, 120, 0.16);
+    padding: 16px;
+    text-align: left;
+    transition: box-shadow 0.3s, transform 0.15s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.course-card img {
+    width: 100%;
+    border-radius: 9px;
+    margin-bottom: 12px;
+    max-height: 350px;
+    object-fit: cover;
+}
+.course-card:hover {
+    box-shadow: 0 4px 20px rgba(29, 43, 83, 0.2);
+    transform: translateY(-3px);
+}
+.course-card h3 {
+    margin: 0 0 8px 0;
+    color: #1976d2;
+    font-size: 1.17rem;
+}
+
+.course-card p {
+    margin: 0 0 15px 0;
+    color: #222;
+}
+
+.course-card button {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: auto;
+    transition: background 0.3s;
+}
+.course-card button:hover {
+    background: #1565c0;
+}
+                  
+.faq {
+      /* margin-top: 1rem; */
+      margin-bottom: 30px;
+    }
+  
+    .faq-question{
+      background-color: rgb(237, 241, 247);
+      border-radius: 10px;
+      width: 700px;
+    font-size: 1rem;
+
+      margin-left: 300px;
+      height: 20px;
+      padding-top: 15px;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      text-align:start;
+      padding-top: 20px;
+      cursor: pointer;
+    }
+
+     .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.whatsapp-float img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+.follow-us {
+  text-align: center;
+  padding: 30px 15px;
+}
+    .follow-us h2 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 20px;
+justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.image-row {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  gap: 20px; 
+}
+
+.image-item img {
+  width: 450px; 
+  height: 400px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: block;
+}
+
+.zoom{
+  display: inline-block;
+  transform: scale(0.8);
+  opacity: 0;
+  animation: Zoomtext 0.10s ease-in-out forwards;
+
+}
+@keyframes Zoomtext {
+  to{
+    opacity: 5;
+    transform: scale(1);
+  }
+  from{
+    
+  }
+  
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  body{
+    margin-right: 0%;
+  }
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 56px;
+        left: 240px;
+        width: 40%;
+        /* z-index: 2; */
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+  
+
+    .overplay {
+        display: block;
+    transform: translate(-70%, -80%);
+
+
+    }
+    .btn{
+          display: block;
+    transform: translate(-250%, 170%);
+
+    }
+    .btn2{
+        display: block;
+    transform: translate(-130%, 70%);
+
+    }
+    .pera{
+    transform: translate(-60%, -70%);
+
+    }
+    blockquote {
+        width: 90%;
+        font-size: .70em;
+    }
+    
+    .achievements-section img {
+        width: 100%;
+    }
+    .achievement{
+        padding: .5rem;
+      }
+      .Events img{
+        display: block;
+        width: 600px;
+        height: 500px;
+      }
+    .Asked{
+        margin-left: 40px;
+        padding: 10px;
+      }
+.text-box{
+
+  margin-top: 400px;
+  position: absolute;
+  width: 350px;
+margin-right: 0px;
+
+margin-left: -0px;
+}   
+.cointainer img{
+    font-size: 14px;
+    height: 400px;
+    width: 350px;
+    margin-left: -4%;
+    
+  }
+.my-image{
+  float: inline-end;
+  margin-left: 0px;
+  border-radius: 10px;
+  height: 450px;
+  width: 50%; 
+} 
+.Events img{
+  width: 490px;
+  margin:0 5px;
+}
+.flex{
+  margin-top: 350px;
+}
+.image-row{
+  display: block;
+  width: -200px;
+  margin-left: -0;
+}
+.image-item{
+  width: 40%;
+
+}
+
+}
+
+@media (max-width: 1020px) {
+    .courses-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+</style>
+<body>
+  <header>
+    <nav class="navbar">
+    <div class="logo"><img src="iics-logo.jpeg" width="150px" height="100px" alt=""></div>
+        
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Placement</a></li>
+            <li><a href="#">Franchise</a></li>
+            <li><a href="#">Branches</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <!-- <a href="">+91 78352192</a> -->
+        </ul>
+    </nav>
+    </header>
+    <section>
+<div class="image-container">
+      <img src="software.jpg" class="comp">
+      <div class="overplay">
+
+        <button class="btn">Enroll Now</button>
+        <button class="btn2">Read More</button> 
+  </div>
+
+      </div>
+</div>
+
+     <section class="courses">
+        <h2 class="zoom" style="font-size: 50px;">Popular Courses</h2>
+        <p>Empower your future with our engaging, innovative, and skill-focused learning programs.</p><br>
+        <div class="courses-grid">
+            <div class="course-card">
+                <img src="soft.jpg" alt="Software Engineering" height="2000px">
+                <h3>Software Engineering</h3>
+                <p>Master the art of developing robust and scalable software solutions.</p>
+                <button>Know More</button>
+            </div>
+            <div class="course-card">
+                <img src="media.jpg" alt="Multimedia Animation"  height="2000px">
+                <h3>Multimedia Animation</h3>
+                <p>Create stunning visuals and bring stories to life with animation.</p>
+                <button>Know More</button>
+            </div>
+            <div class="course-card">
+                <img src="market.jpg" alt="Digital Marketing" height="2000px">
+                <h3>Digital Marketing</h3>
+                <p>Dominate the digital world with top marketing strategies.</p>
+                <button>Know More</button>
+            </div>
+            <div class="course-card">
+                <img src="hack.jpg" alt="Ethical Hacking"  height="2000px">
+                <h3>Ethical Hacking</h3>
+                <p>Protect systems and data with advanced security skills.</p>
+                <button>Know More</button>
+            </div>
+            <div class="course-card">
+                <img src="data-science.jpg" alt="Data Science"  height="2000px">
+                <h3>Data Science</h3>
+                <p>Analyze data for strategic decision-making.</p>
+                <button>Know More</button>
+            </div>
+            <div class="course-card">
+                <img src="stock.jpg" alt="Stock Market" height="2000px">
+                <h3>Stock Market</h3>
+                <p>Master the art of investment and stock trading.</p>
+                <button>Know More</button>
+            </div>
+        </div>
+    </section>
+    <br>
+        <section class="quote-box">
+          <div>
+<h2>IICS Empowers Students With Industry - <br>
+Relevant IT And Computer Skills Through  <br>
+Certified Courses In Software, Hardware, <br>
+Multimedia, Digital Marketing, And More. <br>
+With Expert Faculty, Practical Training, <br>
+And Placement Support, We Prepare <br>
+Future-Ready Professionals To Thrive In <br>
+Today’s iDgital World. Learn, Grow, And <br>
+Succeed With IICS.</h2>
+
+            
+             </div>
+    </section>
+
+
+ <section class="branches-section">
+        <h2 style="font-size: 50px;"><b>Branches In Delhi</b></h2><br>
+        <ul class="branches-list" style="font-size: 50px;">
+           <li><b>GTB Nagar</b></li>
+            <li><b>Pitampura</b></li>
+            <li><b>Yamuna Vihar</b></li>
+            <li><b>Daryaganj</b></li>
+            <li><b>Nangloi</b></li>
+            <li><b>Nirman Vihar</b></li>
+            </ul>
+    </section>
+    <br><br>
+<div style="background-color:rgb(226, 234, 243);">
+<section>
+  <br>
+    <h2 style="text-align: center; color: #134067; font-size: 50px;">Achievements</h2><br>
+    
+<div class="cointainer">
+  <img src="arjun.jpg" width="50%" class="my-image">
+  
+  <div class="text-box"> 
+    IICS Computer Education Receives “Most <br>
+Trusted Brand” Award from Arjun <br>
+Kapoor. IICS Computer Education has added <br>
+another feather to its cap by being honored <br>
+with the prestigious “Most Trusted Brand” <br>
+award. The award was presented by <br>
+Bollywood star Arjun Kapoor at a glittering<br> 
+ceremony attended by industry leaders, <br>
+educators, and technology enthusiasts.<br>
+
+This recognition reflects the institution’s <br>
+unwavering commitment to delivering <br>
+quality computer education and <br>
+empowering students with the skills<br> 
+needed to thrive in a digital world. Over the <br>
+years, IICS has built a reputation for <br>
+excellence through its innovative teaching <br>
+methods, state-of-the-art infrastructure, and <br>
+a dedicated focus on student success<br>
+
+  </div>
+</div>
+  <br><br>
+    <div class="flex" style="background-color: rgb(226, 234, 243);">
+      <div class="achievement">
+        <img src="achiv.jpg" alt="Award Photo">
+        <div>
+          <b style="margin-left: 20px;">Award As Best Placement India Institutu In North India</b>
+
+          <p style="margin-left: 20px; margin-bottom: 50px;">Receiving award for Best Placement Institute in North <br> India from 
+honourable HRD minister of state Dr. 
+Ram Shankar Katheria.
+</p>
+        </div>
+      </div>
+      <div class="achievement">
+        <img src="achiv2.jpg" alt="Award Photo">
+        <div>
+          <b style="margin-left: 20px;">Awarded  As Best Skill Development 
+Institute in North India 
+</b>
+          <p style="margin-left: 20px;">Receiving award for Best Skill Development Institute in North <br>India 
+from honourable HRD minister of 
+state Dr. Ram Shankar Katheri</p>
+        </div>
+      </div>
+      <div class="achievement">
+        <img src="achiv3.jpg" height="330px" alt="Award Photo">
+        <div>
+          <b style="margin-left: 20px;">Awarded As Best Computer 
+Education in Delhi-NCR
+</b>
+          <p style="margin-left: 20px;">Receiving Award For “BEST 
+COMPUTER EDUCATION IN <br>DELHI
+NCR” From Honorable Union Minister 
+of Communications and Information 
+Technology & Minister.</p>
+        </div>
+      </div>
+    </div>
+</div>
+<div>
+
+<div style="background-color: rgb(226, 234, 243);">
+<h1 style="color: #174b79; text-align: center; font-size: 50px;">Events</h1><br>
+<div class="image-row">
+  <div class="image-item">
+    <img src="certificate.jpg" alt="Seminar 1"><br>
+    <h3 style="text-align: center;">CERTIFICATE DISTRIBUTION</h3>
+    <br>
+  </div>
+  <div class="image-item">
+    <img src="sem.jpg" alt="Seminar 2"><br>
+    <h3 style="text-align: center;"> STUDENT'S SEMINAR</h3><br>
+  </div>
+  <div class="image-item">
+    <img src="ipl.jpg" alt="Seminar 2"><br>
+    <h3 style="text-align: center;">IICS IPL SEASON 5</h3><br>
+  </div>
+</div>
+  </section>
+ 
+<section class="testimonials-section">
+  <h1 style="color: #042c50; text-align: center;  font-size: 50px;">Testimonials From Our Students</h1><br>
+  <div class="testimonials-container">
+    <div class="testimonial-card">
+      <div class="testimonial-img"></div>
+      <div class="testimonial-content">
+        <h4>Payal Roy</h4>
+        <h4>DCAP</h4>
+
+        <p>IICS Computer Education Provides Outstanding Teaching, Professional staff, and they have all the Modern Facilities. Proud to be part of
+        IICS. Best Institute For Computer Education!</p>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-img1"></div>
+      <div class="testimonial-content">
+        <h4>Kartik </h4>
+        <h4>MDCE</h4>
+        <p>IICS Computer Education Provides Outstanding Teaching, Professional staff, and they have all the Modern Facilities. Proud to be part of
+        IICS. Best Institute For Computer Education!</p>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-img2"></div>
+      <div class="testimonial-content">
+        <h4> Riya</h4>
+        <h4>ADCE</h4>
+        <p>IICS Computer Education Provides Outstanding Teaching, Professional staff, and they have all the Modern Facilities. Proud to be part of
+        IICS. Best Institute For Computer Education!</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div style="background-color: white; ">
+    <h2 style="margin-left: 35px;  font-size: 50px; margin-bottom: 60px;" >Frequently Asked Questions</h2> <br>
+
+    <div class="faq" style="text-align:center; margin-bottom: 40px;">
+        <div class="faq-question"><h4>Is IICS Computer Education is NIELIT Accredited?</h4></div><br>
+        <div class="faq-question"><h4>Is IICS Computer Education is NSDC Paertner Institute?</h4></div><br>
+        <div class="faq-question"><h4>Is IICS Computer Education is Tally Partner Institute?</h4></div><br>
+        <div class="faq-question"><h4>Is IICS Computer Education is ISO Registerd?</h4></div><br>
+        <div class="faq-question"><h4>NIELIT OLevel, A Level And CCC Accreditation Number?</h4></div><br>
+
+    </div>
+    </div>
+
+    <section class="contact-section" style="background-color: rgb(226, 234, 243);">
+        <h2 style="text-align: center;color: #0b518f;  font-size: 50px; margin-bottom: 80px;">Have a Question ?</h2>
+  <div class="contact-form">
+    <form id="myform">
+      <b><input type="text" placeholder= "Name"></b>
+      <input type="text" placeholder="Phone number" required >
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Location" required />
+    </form>
+    <textarea placeholder="Type your question..." rows="5"></textarea>
+  </div>
+  <button type="submit" style=" font-size: 20px; width: 130px; padding: 15px; border-radius: 10px; background-color: #07357e;">Submit</button>
+</section>
+
+<div class="follow-us">
+  <h2>Follow Us</h2>
+  <div class="social-icons">
+    <a href="#"><img src="https://img.icons8.com/ios-filled/50/3b5998/facebook-new.png"/></a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/twitterx.png"/></a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/50/ff0000/youtube-play.png"/></a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/50/e4405f/instagram-new.png"/></a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/50/0077b5/linkedin.png"/></a>
+  </div>
+  
+  <div class="contact-info">
+    <p><img src="https://img.icons8.com/ios-filled/20/25D366/phone.png"/> ‪+91 9540299944‬</p>
+    <p><img src="https://img.icons8.com/ios-filled/20/25D366/phone.png"/> ‪+91 9355930930‬</p>
+    <p><img src="https://img.icons8.com/ios-filled/20/000000/new-post.png"/> iicscomputereducation@gmail.com</p>
+  </div>
+</div>
+<footer class="footer">
+  <div class="footer-col">
+    <h3>Advance Courses</h3><br>
+    <h4>NEILT Training<br><br>Power BI<br><br>Python Training<br><br>Magento Training<br><br>SQL Server Certification</h4>
+  </div>
+  <div class="footer-col">
+    <h3>Corporate Courses</h3><br>
+    <h4>Joomla Training<br><br>WordPress Training<br><br>PHP Training<br><br>Java Training</h4>
+  </div>
+  <div class="footer-col">
+    <h3>Contact Details</h3><br>
+    <h3>E-586, Second Floor, Nirman Vihar,<br>Near Metro Station Gate No. 3,<br>Delhi - 110092<br><br>
+    iicstechnicaleducation@gmail.com<br><br>+91-954029949</h3>
+  </div>
+  <div class="footer-col">
+    <div class="iics">
+
+  </div>
+</div>
+    <br>
+    <img src="app.jpg" width="150" height="70">
+    <img src="play.jpg" width="150" height="70">
+  </div>
+  
+</footer>
+<footer class="copy"><b>Copyright &copy; 2018 IICS. All Right Resrved Design By IICS India</b></footer>
+</section>
+
+<a href="https://wa.me/919540145504?text=Hello%2C%20I%20have%20a%20question" 
+   class="whatsapp-float" target="_blank">
+   <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png"/>
+   How can I help you?
+</a>
+
+
+    <script>// Toggle for mobile navigation menu
+const menuToggle = document.getElementById('menuToggle');
+const navbarLinks = document.getElementById('navbarLinks');
+
+menuToggle.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+
+
+});</script>
+</body>
+</html>
